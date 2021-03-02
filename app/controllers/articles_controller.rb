@@ -1,8 +1,16 @@
 class ArticlesController < ApplicationController
 
   def show
-    byebug
-    @article = Article.find(params[:id])
+  #  byebug
+      @article = Article.find(params[:id])
   end
 
-end 
+
+
+  def index
+
+      @articles = Article.all
+
+  end
+
+end
